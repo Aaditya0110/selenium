@@ -1,0 +1,71 @@
+{
+  "id": "4011de16-bd33-42c0-b02e-29115a7b48f2",
+  "version": "2.0",
+  "name": "d3-05-",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "ffa1c506-0f80-4fe0-a31d-3d9197d448af",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "ff55fe88-3ec3-4867-a0e3-5b91a2763f91",
+    "name": "ec-05",
+    "commands": [{
+      "id": "76bcdefe-2f15-40c6-90eb-019ea7cb89b2",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a703f6d1-bbe0-498d-98f7-09edf091a9fd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scroll(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "870deb7f-0e04-4801-9dfa-5e7ef9e4735b",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "5f7dd79e-9626-41f9-bf15-084cbd30b525",
+      "comment": "",
+      "command": "check",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e57bdef4-5f92-45da-a8f4-adef99bcad61",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f702f213-6df5-4545-b6aa-73c660286e88",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-inline",
+      "targets": [
+        ["css=.form-check-inline", "css:finder"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div", "xpath:position"]
+      ],
+      "value": "I understand that gift certificates are non-refundable "
+    }]
+  }],
+  "suites": [{
+    "id": "7cab0353-1a00-431d-9768-28af1a3ed4e0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ffa1c506-0f80-4fe0-a31d-3d9197d448af"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}
